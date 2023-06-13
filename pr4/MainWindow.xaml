@@ -1,0 +1,30 @@
+﻿<Window x:Class="pr4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <StackPanel MinWidth="100" DockPanel.Dock="Left">
+                <TextBlock HorizontalAlignment="Center">Editing Mode</TextBlock>
+                <Button x:Name="btnSelection" Margin="5">Selection</Button>
+                <Button x:Name="btnDraw" Margin="5">Draw</Button>
+                <Button x:Name="btnErase" Margin="5">Erase</Button>
+                <TextBlock HorizontalAlignment="Center">Choose Color</TextBlock>
+                <Rectangle x:Name="rectRed" Fill="Red" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectOrange" Fill="Orange" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectYellow" Fill="Yellow" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectGreen" Fill="Green" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectCyan" Fill="Cyan" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectBlue" Fill="Blue" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectPurple" Fill="Purple" MinHeight="50" Margin="5"></Rectangle>
+                <Rectangle x:Name="rectBlack" Fill="Black" MinHeight="50" Margin="5"></Rectangle>
+            </StackPanel>
+            <InkCanvas x:Name="InkCanvas1" EditingMode="Ink" ClipToBounds="True">
+            </InkCanvas>
+        </DockPanel>
+    </Grid>
+</Window>
